@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body onload="setup()">
+        <script src="display.js"></script>
+        <script src="directories.js"></script>
+
+        <div class="container">
+            <div id="meter-position"></div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Directories <span class="caret"></span></button>
+                <ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <!-- Available directories will be shown here -->
+                </ul>
+            </div>
+
+            <div class="directory-details">
+                <h4 id="dir-label">Directory: <span id="directory">none</span></h4>
+                <h4 id="files-label">Files: <span id="files-amount">none</span></h4>
+            </div>
+        </div>
+    </body>
+</html>
